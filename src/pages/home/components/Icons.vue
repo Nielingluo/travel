@@ -61,8 +61,13 @@ export default {
         },
         {
           id: '009',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/fa/2548667cb6e902.png',
-          desc: '杜莎蜡像馆'
+          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/de/f26be47a6bf02a02.png',
+          desc: '上海迪士尼'
+        },
+        {
+          id: '010',
+          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png',
+          desc: '全部玩乐'
         }
       ]
     }
@@ -90,6 +95,7 @@ export default {
     overflow: hidden
     height:0
     padding-bottom 50%
+    margin-top .1rem
     .icon
       position relative
       overflow: hidden
