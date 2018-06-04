@@ -1,15 +1,19 @@
 <template>
     <div>
       <div class="banner" @click="handleBannerClick">
-        <img class="banner-img" src="//img1.qunarzz.com/sight/p0/1710/7f/7f06f56b02987c66a3.img.jpg_600x330_029cf445.jpg" alt="">
+        <img class="banner-img" :src="bannerImg" alt="">
         <div class="banner-info">
-          <div class="banner-title">库木塔格沙漠公园</div>
-          <div class="banner-number"><span class="iconfont banner-icon">&#xe604;</span>8</div>
+          <div class="banner-title">{{this.sightName}}</div>
+          <div class="banner-number"><span class="iconfont banner-icon">&#xe604;</span>{{this.bannerImgs.length}}</div>
         </div>
       </div>
+<<<<<<< HEAD
       <fade-animation>
         <Common-gallary :imgs="imgs" v-show="showGallary" @close="handleGallaryClose"></Common-gallary>
       </fade-animation>
+=======
+      <Common-gallary :imgs="bannerImgs" v-show="showGallary" @close="handleGallaryClose"></Common-gallary>
+>>>>>>> detail-ajax
     </div>
 </template>
 
@@ -18,11 +22,14 @@ import CommonGallary from 'common/gallary/Gallary'
 import FadeAnimation from 'common/fade/Fade'
 export default {
   name: 'DetailBanner',
+  props: {
+    sightName: String,
+    bannerImg: String,
+    bannerImgs: Array
+  },
   data () {
     return {
-      showGallary: false,
-      imgs: ['http://img1.qunarzz.com/sight/p0/1710/7f/7f06f56b02987c66a3.img.jpg_r_800x800_eb8da27f.jpg', 'http://img1.qunarzz.com/sight/p0/1710/7f/7f06f56b02987c66a3.img.jpg_r_800x800_eb8da27f.jpg'
-      ]
+      showGallary: false
     }
   },
   methods: {
