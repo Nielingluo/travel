@@ -7,13 +7,9 @@
           <div class="banner-number"><span class="iconfont banner-icon">&#xe604;</span>{{this.bannerImgs.length}}</div>
         </div>
       </div>
-<<<<<<< HEAD
       <fade-animation>
-        <Common-gallary :imgs="imgs" v-show="showGallary" @close="handleGallaryClose"></Common-gallary>
+        <Common-gallary :imgs="bannerImgs" v-show="showGallary" @close="handleGallaryClose"></Common-gallary>
       </fade-animation>
-=======
-      <Common-gallary :imgs="bannerImgs" v-show="showGallary" @close="handleGallaryClose"></Common-gallary>
->>>>>>> detail-ajax
     </div>
 </template>
 
